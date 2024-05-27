@@ -57,7 +57,7 @@ function Content() {
               </Link>
               <div className="w-32 h-10 md:w-48 md:h-12 lg:w-52 lg:h-16 text-center content-center hover:text-blue-700">
                 <Link to="/product">
-                  <span className="md:text-xl lg:text-2xl">See More</span>
+                  <p className="md:text-xl lg:text-2xl">See More</p>
                 </Link>
               </div>
             </div>
