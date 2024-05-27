@@ -14,7 +14,7 @@ var interval = 2000;
 function Content() {
   return (
     <>
-      <section id="Home" className="">
+      <section id="Home" className="block">
         <div className="flex mx-4 mt-4 lg:px-20 xl:px-48 2xl:px-72 content-center">
           <div className="">
             <div className="">

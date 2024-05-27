@@ -10,11 +10,9 @@ function Footer() {
 
   return (
     <>
-      <section id="footer">
+      <section id="footer" className="block">
         <div className="w-full py-4 md:py-6 xl:py-8 md:text-2xl lg:text-3xl 2xl:text-4xl text-black bg-gray-300 content-center text-center">
-          <div data-aos="zoom-in" data-aos-duration="5000">
-            <span>Don't waste another minute, get yours now.</span>
-          </div>
+          <span>Don't waste another minute, get yours now.</span>
         </div>
         <div className="w-full h-fit md:h-fit lg:h-fit bg-primary-800 grid-row-4 md:inline-grid md:grid-cols-2 md:gap-8 lg:flex justify-between px-5 md:px-16 lg:px-32 py-5 md:py-10 lg:py-10">
           <div>

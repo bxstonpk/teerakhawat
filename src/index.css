@@ -150,3 +150,15 @@
 #cookie-banner {
   background-color: rgba(8, 7, 7, 0.3);
 }
+
+.w-custom{
+  width: 100dvw;
+}
+
+.h-custom{
+  height: 100dvh;
+}
+
+.Nav{
+  position: fixed;
+}

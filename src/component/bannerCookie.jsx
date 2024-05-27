@@ -1,8 +1,16 @@
 import React from "react";
 
+var dontShowAgain = false;
+
 const HiddenCookie = () => {
-  document.getElementById("cookie-banner").style.display = "none";
+  if (dontShowAgain) {
+    document.getElementById("cookie-banner").style.display = "none";
+  } else {
+    document.getElementById("cookie-banner").style.display = "block";
+  }
 }
+
+
 
 function BannerCookie() {
   return (
@@ -18,7 +26,8 @@ function BannerCookie() {
           &nbsp;&nbsp;
           <button
             className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-            onClick={ HiddenCookie}
+            onClick={ HiddenCookie }
+            onChange={ dontShowAgain = true }
           >
             Got it!
           </button>

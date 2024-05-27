@@ -8,6 +8,14 @@ function Nav() {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    if(isMenuOpen){
+      document.getElementById("Home").style.display = "block";
+      document.getElementById("footer").style.display = "block";
+    } else {
+      document.getElementById("Home").style.display = "none";
+      document.getElementById("footer").style.display = "none";
+      document.getElementById("cookie-banner").style.display = "none";
+    }
   };
 
   return (
@@ -112,8 +120,8 @@ function Nav() {
       </nav>
       <hr />
       {isMenuOpen ? (
-        <div className="w-full">
-          <ul className="flex-col text-center absolute h-full w-full font-medium lg:hidden bg-white">
+        <div className="w-custom">
+          <ul className="flex-col text-center absolute h-custom w-custom font-medium lg:hidden bg-white">
             <li className="p-2">
               <Link
                 to="/"
