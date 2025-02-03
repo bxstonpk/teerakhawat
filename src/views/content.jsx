@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import ImgSlice from "../component/ImgSlice";
 import TextSlice from "../component/TextSlice";
 
+import data from "../data/data";
+
 /*
   lg:px-20 xl:px-48 2xl:px-72
 */
@@ -97,8 +99,7 @@ function Content() {
                 <span>วิสัยทัศน์ (VISION)</span>
                 <div className="ml-4 md:ml-8 lg:ml-24">
                   <span>
-                    เป็นบริษัทที่สร้างความมั่นใจ ทั้งคุณภาพ
-                    และผลิตภัณฑ์ที่ดีให้กับลูกค้า
+                    {data.vision}
                   </span>
                 </div>
               </div>

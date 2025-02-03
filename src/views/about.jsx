@@ -1,5 +1,7 @@
 import React from "react";
 
+import data from "../data/data";
+
 function About() {
   return (
     <section id="aboutpage" className="lg:px-20 xl:px-48 2xl:px-72">
@@ -8,6 +10,18 @@ function About() {
         <br />
         <span>Teerakhawat Can Company Limited</span>
       </div>
+      <div className="flex justify-center items-center">
+      <video 
+        src="/companyprofile.mp4" 
+        controls 
+        autoPlay 
+        loop 
+        muted 
+        className="w-full max-w-3xl rounded-lg shadow-lg"
+      />
+    </div>
+      <br />
+      <br />
       <div className="bg-[url('./background.svg')] bg-cover">
         <div className="flex justify-between">
           <div></div>
@@ -42,10 +56,17 @@ function About() {
             </div>
             <div className="mx-8 mt-4 text-white md:text-xl lg:text-2xl md:mx-10 lg:mx-36">
               <p className="">วิสัยทัศน์</p>
-              <span className="">
-                &emsp;เป็นบริษัทที่สร้างความมั่นใจ ทั้งคุณภาพ
-                และผลิตภัณฑ์ที่ดีให้กับลูกค้า
-              </span>
+              <span className="">&emsp;{data.vision}</span>
+            </div>
+            <div className="mx-8 mt-4 text-white md:text-xl lg:text-2xl md:mx-10 lg:mx-36">
+              <p className="">พันธกิจ</p>
+              <span className="">&emsp;{data.mission1}</span>
+              <br />
+              <span className="">&emsp;{data.mission2}</span>
+              <br />
+              <span className="">&emsp;{data.mission3}</span>
+              <br />
+              <span className="">&emsp;{data.mission4}</span>
             </div>
             <div className="h-8 md:h-10 lg:h-16"></div>
           </div>
